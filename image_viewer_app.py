@@ -14,8 +14,8 @@ my_img1 = ImageTk.PhotoImage(Image.open("images/ikhom1.png"))
 my_img2 = ImageTk.PhotoImage(Image.open("images/ikhom2.png"))
 my_img3 = ImageTk.PhotoImage(Image.open("images/ikhom3.jpg"))
 my_img4 = ImageTk.PhotoImage(Image.open("images/ikhom4.jpg"))
-my_img5 = ImageTk.PhotoImage(Image.open("images/ikhom5.jpg"))
-my_img6 = ImageTk.PhotoImage(Image.open("images/khom6.jpg"))
+my_img5 = ImageTk.PhotoImage(Image.open("hacker.png"))
+my_img6 = ImageTk.PhotoImage(Image.open("images/ksnip_guitar.png"))
 my_img7 = ImageTk.PhotoImage(Image.open("images/ikhomkodes.png"))
 
 
@@ -32,15 +32,15 @@ def forward(image_number):
 
     my_label.grid_forget()
     my_label = Label(image=image_list[image_number - 1])
-    button_forward = Button(root, text=">>", command=lambda: forward(image_number+1))
-    button_back = Button(root, text="<<", command=lambda: back(image_number-1))
+    button_forward = Button(root, text=">>", command=lambda: forward(image_number + 1))
+    button_back = Button(root, text="<<", command=lambda: back(image_number - 1))
 
-    if image_number == 7:
+    if image_number == 6:
         button_forward = Button(root, text=">>", state=DISABLED)
 
-        my_label.grid(row=0, column=0, columnspan=3)
-        button_back.grid(row=1, column=0)
-        button_forward.grid(row=1, column=2)
+    my_label.grid(row=0, column=0, columnspan=3)
+    button_back.grid(row=1, column=0)
+    button_forward.grid(row=1, column=2)
 
 
 def back(image_number):
@@ -56,9 +56,9 @@ def back(image_number):
     if image_number == 1:
         button_back = Button(root, text="<<", state=DISABLED)
 
-        my_label.grid(row=0, column=0, columnspan=3)
-        button_back.grid(row=1, column=0)
-        button_forward.grid(row=1, column=2)
+    my_label.grid(row=0, column=0, columnspan=3)
+    button_back.grid(row=1, column=0)
+    button_forward.grid(row=1, column=2)
 
 
 button_back = Button(root, text="<<", command=back)

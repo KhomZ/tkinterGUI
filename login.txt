@@ -1,0 +1,38 @@
+>_ ikhomkodes
+@ikhomkodes
+
+Python Program for login page using Tkinter Package
+
+
+# Create a login page using Tkinter in Python
+1. from tkinter import *
+
+
+# Create a function which generates a login window with a login page as title.
+1. def main_screen():
+       mainscreen = Tk()    # create a GUI window
+       mainscreen.geometry("800x800")   # set the configuration of GUI window
+       mainscreen.title("Login Page")   # set the title of GUI window
+
+
+# create a level for some message:
+1. # create a Form Label
+2. Label(text="Login Window Example", bg="blue", width="30", height="2", font=("Calibri", 13)).pack()
+3. Label(text="").pack()
+
+
+# Now, at last, we have to create two buttons: Register button & a Login button
+1. # create Login button
+2. Button(text="Login", height"2", width="30").pack()
+3. Label(text="").pack()
+4.
+5. # create a register button
+6. Button(text="Register", height"2", width="30").pack()
+
+Learn More about pack() from the depth:
+    Tkinterpack(), grid() Method in Python
+
+# Finally, start the window and call the main_screen function:
+1. mainscreen.mainloop()    # start the GUI
+2.
+3. main_screen()    # call the main_account_screen() function

@@ -3,5 +3,5 @@
 
 ## It's a complete package where you can learn to use python tkinterGUI.
 please rate my work:
-calculator 
+calculator &
 image viewer app

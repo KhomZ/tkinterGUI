@@ -5,3 +5,7 @@
 please rate my work:
 calculator &
 image viewer app
+
+
+Here's my Konsole screenshot:
+![alt text](https://github.com/KhomZ/tkinterGUI/blob/master/images/ikhomkodes.png?raw=true)
